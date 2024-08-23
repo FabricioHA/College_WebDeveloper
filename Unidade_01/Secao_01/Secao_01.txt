@@ -1,0 +1,31 @@
+Programação Web - 06/08/24
+
+HTML não é uma linguagem de programação, ele seria uma linguagem de marcação de texto, diferente de uma linguagem de programação.
+
+Podemos utilizar vários servidores para hospedar sites, como Apache, Tom Cat, Nginx, entre outros.
+
+Precisariamos também para validar o site como seguro, instalar um certificado apache no site para garantir a "Lei Geral de Proteção de Dados" e a integridade do mesmo.
+
+Servidores locais para teste no Linux: LaMp 
+Link para documentação: https://wiki.debian.org/LaMp
+
+==================================
+
+Os primeiros computadores precisavam de meios rápidos de comunicação entre as bases militares, surgindo assim a ARPANET, que fazia essa interligação. Depois as bases americanas liberaram o acesso a tecnologia dividindo entre MILNET, exclusiva para militares, e a internet, para uso público até os dias de hoje.
+
+Foi em 1990 que foi criado o protocolo HTTP por Tim Berners-lee, permitindo a conexão de comunicação entre outras máquinas chamado World Wide Web (WWW).
+
+Estrutura básica de URL (Uniform Resource Locator / Localizadore Uniforme de Recursos)
+
+
+protocolo://dominio:porta/caminho/recurso?busca#identificador
+
+- Protocolo indica o método de acesso, como HTTP (protocolo de transferência de hipertexto), HTTPS (transferência criptografada de hipertexto), FTP (protocolo de transferência de arquivos) e outros.
+
+- Domínio indica o endereço em que se encontra o recurso.
+    
+- Porta filtra o acesso a um dispositivo alvo. Por exemplo: o protocolo HTTP usa a porta 80 e o HTTPS a 443.
+
+- Caminho indica a localização de pastas e diretórios em que se encontra algum recurso (ou arquivo) desejado.
+    
+- Busca e o Identificador são atributos opcionais que permitem o envio de informações ao documento acessado e o acesso a posições específicas, respectivamente.
