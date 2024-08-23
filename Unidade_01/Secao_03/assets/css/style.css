@@ -5,17 +5,23 @@
 
 body
 {
-    height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow-x: hidden;
 }
 .container
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 50px;
+    align-items: center;
+    margin: 50px 0px 50px 0px;
     width: 100%;
     height: auto;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .wrapper-form
@@ -26,6 +32,15 @@ body
     height: auto;
     gap: 20px;
 }
+
+.wrapper-title
+{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
 .main-title
 {
     color: blue;
@@ -68,6 +83,9 @@ body
     height: 50px;
     width: 100%;
     border-radius: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 input[type=submit]
