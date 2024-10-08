@@ -1,0 +1,14 @@
+Layout em CSS - Box Model
+
+Box model é um conceito fundamental para a composição de páginas HTML, ele visualiza cada elemento
+da página como uma caixa e define algumas propriedades.
+
+
+Ao editar uma div, podemos fazer edções na em alguns elementos, como:
+
+-Margem externa (margin)
+-Borda (border)
+-margem interna (padding)
+-conteúdo, que pode ser um texto, uma imagem, um vídeo, apenas uma caixa vazia, entre outros;
+
+

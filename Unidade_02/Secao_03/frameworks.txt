@@ -1,0 +1,28 @@
+DataTables Framework: É um Framework css/javascript especialemente desenvolvido para a formatação automática de tabelas. Ele contém funcionalidades avançadas que podem ser inseridas com poucas linhas de código, bem como permite a ordenação alfabética ou numérica de dados da tabela com base em elementos de uma coluna, por exemplo.
+
+ inserção das tags no HEAD do html ao DataTables:
+ 
+ CSS:
+ 
+
+<link href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"  rel="stylesheet">
+
+Jquery:
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+Código de ativação da tabela com base no ID:
+
+<script>
+
+    $(document) .ready( function(){
+
+        $('nome_tabela') .DataTable();
+
+     } );
+
+</script>
+
+
+
