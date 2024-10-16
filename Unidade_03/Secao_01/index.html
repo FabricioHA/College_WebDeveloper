@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+        <title>Formulário com Validação em JavaScript</title>
+
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Formulário de Registro</h2>
+            <form id="registrationForm" prevent onsubmit="return validateForm()">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="password">Senha:</label>
+                <input type="text" id="password" name="password"><br><br>
+
+                <button type="submit" class="botao">Enviar</button>
+                <p class="error" id="error-message"></p>
+                
+            </form>
+
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
+

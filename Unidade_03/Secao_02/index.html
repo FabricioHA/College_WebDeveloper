@@ -3,30 +3,24 @@
     <head>
         <meta charset="UTF-8"> 
         <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
-        <title>Formulário com Validação em JavaScript</title>
+        <title>Lista JavaScript</title>
 
         <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/script.js"></script>
     </head>
     <body>
         <div class="container">
-            <h2>Formulário de Registro</h2>
-            <form id="registrationForm" prevent onsubmit="return validateForm()">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name"><br><br>
-
-                <label for="email">E-mail:</label>
-                <input type="text" id="email" name="email"><br><br>
-
-                <label for="password">Senha:</label>
-                <input type="text" id="password" name="password"><br><br>
-
-                <button type="submit" class="botao">Enviar</button>
-                <p class="error" id="error-message"></p>
-                
-            </form>
-
+            <div class="card">
+                <h1>Listando elementos</h1>
+                <div class="wrapper-inputs">
+                    <input class="add-text-area" placeholder="Adicione uma nova tarefa">
+                    <button class="add-button" onclick="addTask()">Adicionar</button>
+                </div>
+            </div>
+            <div class="card">
+                <ul class="task-list"></ul>
+            </div>
         </div>
-        <script src="assets/js/script.js"></script>
     </body>
 </html>
 

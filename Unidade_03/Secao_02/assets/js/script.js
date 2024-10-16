@@ -1,28 +1,28 @@
-function validateForm() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
-    const errorMessage = document.getElementById("error-message");
+function addTask()
+{
+    const list = document.querySelector("task-list");
+    const newTask = document.querySelector("add-text-area");
     
-    // Validação simples
-    if (name === "" || email === "" || password === "") 
+    if(newTask == "")
     {
-        errorMessage.style.display = "block";
-        errorMessage.textContent = "Todos os campos devem ser preenchidos!";
-        return false;
+        alert("Por favor, Insira uma nova tarefa!");
+        return;
     }
-    
-    // Validação de e-mail simples
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    
-    if (!emailPattern.test(email)) {
-        errorMessage.style.display = "block";
-        errorMessage.textContent = "Por favor, insira um e-mail válido.";
-    return false;
-    }
-    
-    // Se a validação for bem-sucedida, esconder a mensagem de erro
-    errorMessage.style.display = "none";
-    alert("Formulário enviado com sucesso!");
-    return true;
+
+    //Criar novo elemento na lista
+    let li = document.createElement("li");
+    li.textContent = newTask;
+
+    //criar botão para fechar tarefa
+    let span = document.createElement("span");
+    span.textContent = "X";
+    span.onclick = function(){
+        list.removeChild(li)
+    };
+
+    //Adiciona botão para remover ao item da lista
+    li.appendChild(span);
+    list.appendChild(li);
+
+    document.querySelector("new-task").value = "";
 }

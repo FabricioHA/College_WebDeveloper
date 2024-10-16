@@ -1,0 +1,46 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.botao 
+{
+    width: 100px;
+    height: 40px;
+    background-color: orange;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid orange;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.botao:hover
+{
+    color: orange;
+    background-color: #ffffff;
+}
+
+.error
+{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
