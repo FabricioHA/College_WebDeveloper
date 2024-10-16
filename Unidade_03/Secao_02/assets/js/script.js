@@ -1,7 +1,7 @@
 function addTask()
 {
-    const list = document.querySelector("task-list");
-    const newTask = document.querySelector("add-text-area");
+    const list = document.querySelector(".task-list");
+    const newTask = document.querySelector(".add-text-area").value;
     
     if(newTask == "")
     {
@@ -23,6 +23,4 @@ function addTask()
     //Adiciona botão para remover ao item da lista
     li.appendChild(span);
     list.appendChild(li);
-
-    document.querySelector("new-task").value = "";
 }
